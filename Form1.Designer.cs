@@ -1,4 +1,5 @@
-﻿namespace NotPad
+﻿
+namespace NotPad
 {
     partial class Form1
     {
@@ -28,12 +29,271 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            panel1 = new Panel();
+            button13 = new Button();
+            button12 = new Button();
+            button11 = new Button();
+            button10 = new Button();
+            button9 = new Button();
+            button8 = new Button();
+            button7 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button1 = new Button();
+            button2 = new Button();
+            panel2 = new Panel();
+            richTextBox1 = new RichTextBox();
+            panel1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(button13);
+            panel1.Controls.Add(button12);
+            panel1.Controls.Add(button11);
+            panel1.Controls.Add(button10);
+            panel1.Controls.Add(button9);
+            panel1.Controls.Add(button8);
+            panel1.Controls.Add(button7);
+            panel1.Controls.Add(button6);
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(button4);
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(button2);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1832, 110);
+            panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // button13
+            // 
+            button13.BackgroundImage = Properties.Resources.icons8_save_100;
+            button13.BackgroundImageLayout = ImageLayout.Center;
+            button13.FlatAppearance.BorderSize = 0;
+            button13.FlatStyle = FlatStyle.Flat;
+            button13.Location = new Point(1396, 6);
+            button13.Name = "button13";
+            button13.Size = new Size(107, 104);
+            button13.TabIndex = 13;
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += this.button13_Click;
+            // 
+            // button12
+            // 
+            button12.BackgroundImage = Properties.Resources.icons8_save_100;
+            button12.BackgroundImageLayout = ImageLayout.Center;
+            button12.FlatAppearance.BorderSize = 0;
+            button12.FlatStyle = FlatStyle.Flat;
+            button12.Location = new Point(1533, 6);
+            button12.Name = "button12";
+            button12.Size = new Size(107, 104);
+            button12.TabIndex = 12;
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += this.button12_Click;
+            // 
+            // button11
+            // 
+            button11.BackgroundImage = Properties.Resources.icons8_save_100;
+            button11.BackgroundImageLayout = ImageLayout.Center;
+            button11.FlatAppearance.BorderSize = 0;
+            button11.FlatStyle = FlatStyle.Flat;
+            button11.Location = new Point(1670, 6);
+            button11.Name = "button11";
+            button11.Size = new Size(107, 104);
+            button11.TabIndex = 11;
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += this.button11_Click;
+            // 
+            // button10
+            // 
+            button10.BackgroundImage = Properties.Resources.icons8_save_100;
+            button10.BackgroundImageLayout = ImageLayout.Center;
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.Location = new Point(437, 6);
+            button10.Name = "button10";
+            button10.Size = new Size(107, 104);
+            button10.TabIndex = 10;
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += this.button10_Click;
+            // 
+            // button9
+            // 
+            button9.BackgroundImage = Properties.Resources.icons8_save_100;
+            button9.BackgroundImageLayout = ImageLayout.Center;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Location = new Point(574, 6);
+            button9.Name = "button9";
+            button9.Size = new Size(107, 104);
+            button9.TabIndex = 9;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += this.button9_Click;
+            // 
+            // button8
+            // 
+            button8.BackgroundImage = Properties.Resources.icons8_save_100;
+            button8.BackgroundImageLayout = ImageLayout.Center;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Location = new Point(163, 6);
+            button8.Name = "button8";
+            button8.Size = new Size(107, 104);
+            button8.TabIndex = 8;
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += this.button8_Click;
+            // 
+            // button7
+            // 
+            button7.BackgroundImage = Properties.Resources.icons8_save_100;
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(1259, 6);
+            button7.Name = "button7";
+            button7.Size = new Size(107, 104);
+            button7.TabIndex = 7;
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button6
+            // 
+            button6.BackgroundImage = Properties.Resources.icons8_save_100;
+            button6.BackgroundImageLayout = ImageLayout.Center;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Location = new Point(848, 6);
+            button6.Name = "button6";
+            button6.Size = new Size(107, 104);
+            button6.TabIndex = 6;
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += this.button6_Click;
+            // 
+            // button5
+            // 
+            button5.BackgroundImage = Properties.Resources.icons8_save_100;
+            button5.BackgroundImageLayout = ImageLayout.Center;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Location = new Point(300, 6);
+            button5.Name = "button5";
+            button5.Size = new Size(107, 104);
+            button5.TabIndex = 5;
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += this.button5_Click;
+            // 
+            // button4
+            // 
+            button4.BackgroundImage = Properties.Resources.icons8_save_100;
+            button4.BackgroundImageLayout = ImageLayout.Center;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Location = new Point(711, 6);
+            button4.Name = "button4";
+            button4.Size = new Size(107, 104);
+            button4.TabIndex = 4;
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += this.button4_Click;
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = Properties.Resources.icons8_save_100;
+            button3.BackgroundImageLayout = ImageLayout.Center;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(1122, 6);
+            button3.Name = "button3";
+            button3.Size = new Size(107, 104);
+            button3.TabIndex = 3;
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += this.button3_Click;
+            // 
+            // button1
+            // 
+            button1.BackgroundImage = Properties.Resources.icons8_save_100;
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(985, 6);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 104);
+            button1.TabIndex = 2;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += this.button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackgroundImage = Properties.Resources.icons8_save_100;
+            button2.BackgroundImageLayout = ImageLayout.Center;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(26, 6);
+            button2.Name = "button2";
+            button2.Size = new Size(107, 104);
+            button2.TabIndex = 1;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += this.button2_Click;
+            // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(0, 756);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1832, 110);
+            panel2.TabIndex = 1;
+            panel2.Paint += this.panel2_Paint;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Dock = DockStyle.Fill;
+            richTextBox1.Location = new Point(0, 110);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(1832, 646);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
+            richTextBox1.TextChanged += this.richTextBox1_TextChanged;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(1832, 866);
+            Controls.Add(richTextBox1);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Form1";
+            Text = "NotePad";
+            WindowState = FormWindowState.Maximized;
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
+
+
         #endregion
+
+        private Panel panel1;
+        private Panel panel2;
+        private RichTextBox richTextBox1;
+        private Button button2;
+        private Button button10;
+        private Button button9;
+        private Button button8;
+        private Button button7;
+        private Button button6;
+        private Button button5;
+        private Button button4;
+        private Button button3;
+        private Button button1;
+        private Button button13;
+        private Button button12;
+        private Button button11;
     }
 }
