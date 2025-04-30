@@ -25,7 +25,15 @@ namespace NotPad
         }
         private void button8_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = @"c:\";
+            openFileDialog1.FileName = "Txt.txt";
+            openFileDialog1.DefaultExt = "txt";
+            openFileDialog1.Filter = "Text file |*.txt";
 
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Text= File.ReadAllText(openFileDialog1.FileName);
+            }
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -33,6 +41,15 @@ namespace NotPad
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            saveFileDialog1.InitialDirectory = @"c:\";
+            saveFileDialog1.DefaultExt = "txt";
+            saveFileDialog1.Filter = "Text File |*.txt";
+            saveFileDialog1.FileName = "Txt.txt";
+            var result = saveFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text); ;
+            }
 
         }
         private void button1_Click(object sender, EventArgs e)
