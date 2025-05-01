@@ -3,8 +3,8 @@ namespace NotPad
 {
     public partial class Form1 : Form
     {
-        bool Bold=false;
-        bool UnderLine=false;
+        bool Bold = false;
+        bool UnderLine = false;
         public Form1()
         {
             InitializeComponent();
@@ -26,22 +26,22 @@ namespace NotPad
         private void button3_Click(object sender, EventArgs e)
         {
 
-                FontStyle currentStyle = richTextBox1.Font.Style;
+            FontStyle currentStyle = richTextBox1.Font.Style;
 
-                if (!UnderLine)
-                {
-                    richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size, currentStyle | FontStyle.Underline);
-                    UnderLine = true;
-                }
-                else
-                {
-                    richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size, currentStyle & ~FontStyle.Underline);
-                    UnderLine = false;
-                }
+            if (!UnderLine)
+            {
+                richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size, currentStyle | FontStyle.Underline);
+                UnderLine = true;
             }
+            else
+            {
+                richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size, currentStyle & ~FontStyle.Underline);
+                UnderLine = false;
+            }
+        }
 
 
-        
+
         private void button5_Click(object sender, EventArgs e)
         {
             try
@@ -85,7 +85,7 @@ namespace NotPad
         }
         private void button1_Click(object sender, EventArgs e)
         {
-         
+
             FontStyle currentStyle = richTextBox1.Font.Style;
 
             if (!Bold)
@@ -98,7 +98,7 @@ namespace NotPad
                 richTextBox1.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size, currentStyle & ~FontStyle.Bold);
                 Bold = false;
             }
-            
+
 
         }
         private void button4_Click(object sender, EventArgs e)
@@ -121,11 +121,17 @@ namespace NotPad
         }
         private void button11_Click(object sender, EventArgs e)
         {
-
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.ForeColor = colorDialog1.Color;
+            }
         }
         private void button12_Click(object sender, EventArgs e)
         {
-
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.BackColor = colorDialog1.Color;
+            }
         }
         private void button13_Click(object sender, EventArgs e)
         {
@@ -155,6 +161,15 @@ namespace NotPad
         {
             richTextBox1.Font = fontDialog1.Font;
             richTextBox1.ForeColor = fontDialog1.Color;
+        }
+
+        private void trackBar1_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox1.ZoomFactor = trackBar1.Value;
+            }
+            catch { }
         }
     }
 }
