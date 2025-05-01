@@ -13,7 +13,9 @@ namespace NotPad
         }
         private void button9_Click(object sender, EventArgs e)
         {
-
+            Clipboard.SetText(richTextBox1.Text);
+            richTextBox1.Clear();
+            
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -21,7 +23,7 @@ namespace NotPad
         }
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Clipboard.SetText(richTextBox1.Text);
         }
         private void button8_Click(object sender, EventArgs e)
         {
@@ -37,7 +39,8 @@ namespace NotPad
         }
         private void button10_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("This action will delete data ", "sure", MessageBoxButtons.OKCancel,MessageBoxIcon.Warning,MessageBoxDefaultButton.Button2)==DialogResult.OK)
+              richTextBox1.Text +=  Clipboard.GetText();
         }
         private void button2_Click(object sender, EventArgs e)
         {
