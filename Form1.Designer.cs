@@ -253,26 +253,30 @@ namespace NotPad
             // 
             panel2.Controls.Add(trackBar1);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 756);
+            panel2.Location = new Point(0, 802);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1832, 110);
+            panel2.Size = new Size(1832, 64);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
             // 
             // trackBar1
             // 
-            trackBar1.Dock = DockStyle.Top;
+            trackBar1.Dock = DockStyle.Fill;
+            trackBar1.LargeChange = 2;
             trackBar1.Location = new Point(0, 0);
+            trackBar1.Maximum = 30;
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(1832, 64);
             trackBar1.TabIndex = 0;
+            trackBar1.ValueChanged += trackBar1_ValueChanged;
             // 
             // richTextBox1
             // 
             richTextBox1.Dock = DockStyle.Fill;
             richTextBox1.Location = new Point(0, 110);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(1832, 646);
+            richTextBox1.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
+            richTextBox1.Size = new Size(1832, 692);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             richTextBox1.TextChanged += richTextBox1_TextChanged;
